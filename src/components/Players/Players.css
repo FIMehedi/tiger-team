@@ -1,0 +1,31 @@
+.players-container {
+    width: 500px;
+    height: 500px;
+    background-color: #EFE5E5;
+    overflow-y: scroll;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.heading {
+    margin: 20px 0;
+    font-size: 20px;
+    color: #575151;
+}
+
+.filter {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #C4C4C4;
+    font-size: 16px;
+}
+
+.filter:focus {
+    outline: none;
+}
+
+.filter option {
+    padding: 10px 0;
+}

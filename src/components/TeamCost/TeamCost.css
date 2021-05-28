@@ -1,0 +1,10 @@
+.team-cost {
+    background-color: #EFE5E5;
+    padding: 10px;
+    min-width: 200px;
+    border-radius: 10px;
+}
+
+.team-cost h5 {
+    font-size: 15px;
+}
