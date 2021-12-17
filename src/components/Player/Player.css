@@ -1,44 +1,51 @@
 .player {
-    display: flex;
-    background-color: #C4C4C4;
-    padding: 10px;
-    border-radius: 10px;
-    align-items: center;
-    margin-bottom: 10px;
+  display: flex;
+  background-color: #c4c4c4;
+  padding: 10px;
+  border-radius: 10px;
+  align-items: center;
+  margin-bottom: 10px;
 }
 .player .player-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 5px solid #575151;
-    overflow: hidden;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid #575151;
+  overflow: hidden;
 }
 
 .player .player-img img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .player .info {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .btn {
-    background-color: #575151;
-    min-width: 100px;
-    padding: 10px 20px;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #575151;
+  min-width: 100px;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .btn:focus {
-    outline: none;
+  outline: none;
 }
 
-.info > h3, h5, p, button {
-    margin: 5px 0;
-    color: #575151;
+.info > h3,
+h5,
+p,
+button {
+  margin: 5px 0;
+  color: #575151;
+}
+
+.dragging {
+  box-shadow: 0 0 10px #575151;
 }

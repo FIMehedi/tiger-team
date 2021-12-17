@@ -54,7 +54,6 @@ function App() {
     else if (result.source.droppableId === 'team' && result.destination.droppableId === 'all') {
       const newTeam = [...team];
       const [selectedPlayer] = newTeam.splice(result.source.index, 1);
-      console.log(selectedPlayer);
       handleAddTeam(selectedPlayer, false);
       const newPlayers = [...players];
       newPlayers.splice(result.destination.index, 0, selectedPlayer);

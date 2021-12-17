@@ -13,8 +13,8 @@ const Players = (props) => {
             <h1 className="heading">{props.heading}</h1>
             <Droppable droppableId={props.droppableId}>
                 {
-                    (provided) => (
-                        <div className="players-container"
+                    (provided, snapshot) => (
+                        <div className={`players-container ${snapshot.isDraggingOver ? 'dragging-over' : ''}`}
                             ref={provided.innerRef}
                             {...provided.droppableProps}
                         >

@@ -14,7 +14,7 @@ const player = (props) => {
         <Draggable draggableId={name} index={props.index}>
             {
                 (provided, snapshot) => (
-                    <div className="player"
+                    <div className={`player ${snapshot.isDragging ? 'dragging' : ''}`}
                         ref={provided.innerRef}
                         {...provided.draggableProps}
                         {...provided.dragHandleProps}
