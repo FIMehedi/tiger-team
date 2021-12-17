@@ -1,6 +1,7 @@
 import React from 'react';
+import { Droppable } from 'react-beautiful-dnd';
 import Player from '../Player/Player';
-import './Players.css'
+import './Players.css';
 
 const Players = (props) => {
 
@@ -10,11 +11,21 @@ const Players = (props) => {
     return (
         <div>
             <h1 className="heading">{props.heading}</h1>
-            <div className="players-container">
+            <Droppable droppableId={props.droppableId}>
                 {
-                    players.map(player => <Player player={player} handleAddTeam={handleAddTeam} team={props.team} key={player.id}></Player>)
+                    (provided) => (
+                        <div className="players-container"
+                            ref={provided.innerRef}
+                            {...provided.droppableProps}
+                        >
+                            {
+                                players.map((player, idx) => <Player player={player} handleAddTeam={handleAddTeam} team={props.team} key={player.id} index={idx}></Player>)
+                            }
+                            {provided.placeholder}
+                        </div>
+                    )
                 }
-            </div>
+            </Droppable>
         </div>
     );
 };
